@@ -1,38 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ecf0f1;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.app_header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.app_infobox {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+.app_form {
+  text-align: center;
+  margin-top: 2rem;
+}
+.app_header > h1 {
+  margin-left: 1rem;
+}
+.app_header > .form {
+  margin-right: 1rem;
+}
+td {
+  display: flex;
+  justify-content: space-between;
+}
+td:nth-child(odd) {
+  background-color: #e0f9ff;
+}
+.country_tr {
+  display: flex;
+}
+.chart_card {
+  margin-top: 5rem;
+}
+.chart_header > h4 {
+  margin-bottom: 1rem;
+}
+.chart_data {
+  height: 15rem;
+  overflow: scroll;
+  padding: 1rem;
+}
+.main_infobox {
+  border-top: 3px solid red;
+}
+@media (max-width: 380px) {
+  .app_infobox {
+    flex-direction: column;
   }
 }
